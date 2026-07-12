@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Serial Gateway</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <header>
+    <h1>Serial Gateway</h1>
+    <p class="sub">Hub 逐口校准：扫描在线 COM → 勾选加入服务列表 → 全部完成后启动</p>
+  </header>
+
+  <section class="panel">
+    <div class="row">
+      <label for="serverIp">Server IP</label>
+      <select id="serverIp"></select>
+      <button id="btnRefreshIp" type="button">刷新 IP</button>
+    </div>
+    <div class="row actions">
+      <button id="btnScan" type="button" class="primary">扫描在线设备</button>
+      <button id="btnAddStaging" type="button">加入服务列表</button>
+      <button id="btnSave" type="button">保存配置</button>
+      <button id="btnStart" type="button" class="success">启动网关</button>
+      <button id="btnStop" type="button" class="danger">停止网关</button>
+    </div>
+    <div id="status" class="status">就绪</div>
+  </section>
+
+  <section class="panel">
+    <h2>当前在线设备 <span class="hint-inline">（仅显示此刻插着的口；勾选后加入下方服务列表）</span></h2>
+    <table>
+      <thead>
+        <tr>
+          <th class="col-check">选</th>
+          <th>COM</th>
+          <th>Location</th>
+          <th>VID:PID</th>
+          <th>状态</th>
+        </tr>
+      </thead>
+      <tbody id="scanBody"></tbody>
+    </table>
+    <p id="scanHint" class="hint">点击「扫描在线设备」。一块板子插 Hub 某口 → 扫描 → 勾选 → 加入服务列表 → 换下一口重复。</p>
+  </section>
+
+  <section class="panel">
+    <div class="row">
+      <h2>服务启动列表 <span id="stagingCount" class="badge">0</span></h2>
+      <button id="btnClearStaging" type="button" class="danger small">清空列表</button>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>登记时 COM</th>
+          <th>Hub Location</th>
+          <th>描述</th>
+          <th>TCP 端口</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody id="stagingBody"></tbody>
+    </table>
+    <p id="stagingHint" class="hint">启动网关时按此列表的 Location 绑定槽位（与登记时 COM 号无关）。</p>
+  </section>
+
+  <section class="panel">
+    <h2>运行日志</h2>
+    <pre id="logView"></pre>
+  </section>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
