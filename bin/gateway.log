@@ -1,0 +1,70 @@
+2026/07/09 15:29:49 [INFO] [gateway] started, 6 slots, config=D:\work\AI_tools_PPT\serial-gateway\bin\gateway.yaml
+2026/07/09 15:29:49 [INFO] [slot=3] TCP listen 0.0.0.0:2003 (COM4 Port_#0001.Hub_#0002)
+2026/07/09 15:29:49 [INFO] [slot=4] TCP listen 0.0.0.0:2005 (COM7 Port_#0002.Hub_#0003)
+2026/07/09 15:29:49 [INFO] [slot=5] TCP listen 0.0.0.0:2006 (COM3 Port_#0003.Hub_#0003)
+2026/07/09 15:29:49 [INFO] [slot=1] TCP listen 0.0.0.0:2001 (COM5 Port_#0004.Hub_#0002)
+2026/07/09 15:29:49 [INFO] [slot=6] serial open COM8 (COM8 Port_#0004.Hub_#0003)
+2026/07/09 15:29:49 [INFO] [slot=2] TCP listen 0.0.0.0:2002 (COM6 Port_#0003.Hub_#0002)
+2026/07/09 15:29:49 [INFO] [slot=6] TCP listen 0.0.0.0:2007 (COM8 Port_#0004.Hub_#0003)
+2026/07/09 15:30:11 [WARN] [slot=6] serial offline (was COM8)
+2026/07/09 15:30:15 [INFO] [slot=4] serial open COM7 (COM7 Port_#0002.Hub_#0003)
+2026/07/09 15:30:16 [INFO] [slot=4] client=1 connect 127.0.0.1:7216
+2026/07/09 15:30:19 [INFO] [status] SLOT  PORT  COM      DESCRIPTION      ON  CLIENTS
+2026/07/09 15:30:19 [INFO] [status]  1   2001  -        COM5 Port_#0004.  NO  0
+2026/07/09 15:30:19 [INFO] [status]  2   2002  -        COM6 Port_#0003.  NO  0
+2026/07/09 15:30:19 [INFO] [status]  3   2003  -        COM4 Port_#0001.  NO  0
+2026/07/09 15:30:19 [INFO] [status]  4   2005  COM7     COM7 Port_#0002. YES  1
+2026/07/09 15:30:19 [INFO] [status]  5   2006  -        COM3 Port_#0003.  NO  0
+2026/07/09 15:30:19 [INFO] [status]  6   2007  -        COM8 Port_#0004.  NO  0
+2026/07/09 15:30:46 [INFO] [slot=4] client=2 connect 127.0.0.1:7448
+2026/07/09 15:30:49 [INFO] [status] SLOT  PORT  COM      DESCRIPTION      ON  CLIENTS
+2026/07/09 15:30:49 [INFO] [status]  1   2001  -        COM5 Port_#0004.  NO  0
+2026/07/09 15:30:49 [INFO] [status]  2   2002  -        COM6 Port_#0003.  NO  0
+2026/07/09 15:30:49 [INFO] [status]  3   2003  -        COM4 Port_#0001.  NO  0
+2026/07/09 15:30:49 [INFO] [status]  4   2005  COM7     COM7 Port_#0002. YES  2
+2026/07/09 15:30:49 [INFO] [status]  5   2006  -        COM3 Port_#0003.  NO  0
+2026/07/09 15:30:49 [INFO] [status]  6   2007  -        COM8 Port_#0004.  NO  0
+2026/07/09 15:31:03 [INFO] [slot=4] client=2 disconnect
+2026/07/09 15:31:05 [INFO] [slot=4] client=1 disconnect
+2026/07/09 15:31:19 [INFO] [status] SLOT  PORT  COM      DESCRIPTION      ON  CLIENTS
+2026/07/09 15:31:19 [INFO] [status]  1   2001  -        COM5 Port_#0004.  NO  0
+2026/07/09 15:31:19 [INFO] [status]  2   2002  -        COM6 Port_#0003.  NO  0
+2026/07/09 15:31:19 [INFO] [status]  3   2003  -        COM4 Port_#0001.  NO  0
+2026/07/09 15:31:19 [INFO] [status]  4   2005  COM7     COM7 Port_#0002. YES  0
+2026/07/09 15:31:19 [INFO] [status]  5   2006  -        COM3 Port_#0003.  NO  0
+2026/07/09 15:31:19 [INFO] [status]  6   2007  -        COM8 Port_#0004.  NO  0
+2026/07/09 15:31:49 [INFO] [status] SLOT  PORT  COM      DESCRIPTION      ON  CLIENTS
+2026/07/09 15:31:49 [INFO] [status]  1   2001  -        COM5 Port_#0004.  NO  0
+2026/07/09 15:31:49 [INFO] [status]  2   2002  -        COM6 Port_#0003.  NO  0
+2026/07/09 15:31:49 [INFO] [status]  3   2003  -        COM4 Port_#0001.  NO  0
+2026/07/09 15:31:49 [INFO] [status]  4   2005  COM7     COM7 Port_#0002. YES  0
+2026/07/09 15:31:49 [INFO] [status]  5   2006  -        COM3 Port_#0003.  NO  0
+2026/07/09 15:31:49 [INFO] [status]  6   2007  -        COM8 Port_#0004.  NO  0
+2026/07/09 15:32:19 [INFO] [status] SLOT  PORT  COM      DESCRIPTION      ON  CLIENTS
+2026/07/09 15:32:19 [INFO] [status]  1   2001  -        COM5 Port_#0004.  NO  0
+2026/07/09 15:32:19 [INFO] [status]  2   2002  -        COM6 Port_#0003.  NO  0
+2026/07/09 15:32:19 [INFO] [status]  3   2003  -        COM4 Port_#0001.  NO  0
+2026/07/09 15:32:19 [INFO] [status]  4   2005  COM7     COM7 Port_#0002. YES  0
+2026/07/09 15:32:19 [INFO] [status]  5   2006  -        COM3 Port_#0003.  NO  0
+2026/07/09 15:32:19 [INFO] [status]  6   2007  -        COM8 Port_#0004.  NO  0
+2026/07/09 15:32:49 [INFO] [status] SLOT  PORT  COM      DESCRIPTION      ON  CLIENTS
+2026/07/09 15:32:49 [INFO] [status]  1   2001  -        COM5 Port_#0004.  NO  0
+2026/07/09 15:32:49 [INFO] [status]  2   2002  -        COM6 Port_#0003.  NO  0
+2026/07/09 15:32:49 [INFO] [status]  3   2003  -        COM4 Port_#0001.  NO  0
+2026/07/09 15:32:49 [INFO] [status]  4   2005  COM7     COM7 Port_#0002. YES  0
+2026/07/09 15:32:49 [INFO] [status]  5   2006  -        COM3 Port_#0003.  NO  0
+2026/07/09 15:32:49 [INFO] [status]  6   2007  -        COM8 Port_#0004.  NO  0
+2026/07/09 15:33:19 [INFO] [status] SLOT  PORT  COM      DESCRIPTION      ON  CLIENTS
+2026/07/09 15:33:19 [INFO] [status]  1   2001  -        COM5 Port_#0004.  NO  0
+2026/07/09 15:33:19 [INFO] [status]  2   2002  -        COM6 Port_#0003.  NO  0
+2026/07/09 15:33:19 [INFO] [status]  3   2003  -        COM4 Port_#0001.  NO  0
+2026/07/09 15:33:19 [INFO] [status]  4   2005  COM7     COM7 Port_#0002. YES  0
+2026/07/09 15:33:19 [INFO] [status]  5   2006  -        COM3 Port_#0003.  NO  0
+2026/07/09 15:33:19 [INFO] [status]  6   2007  -        COM8 Port_#0004.  NO  0
+2026/07/09 15:33:49 [INFO] [status] SLOT  PORT  COM      DESCRIPTION      ON  CLIENTS
+2026/07/09 15:33:49 [INFO] [status]  1   2001  -        COM5 Port_#0004.  NO  0
+2026/07/09 15:33:49 [INFO] [status]  2   2002  -        COM6 Port_#0003.  NO  0
+2026/07/09 15:33:49 [INFO] [status]  3   2003  -        COM4 Port_#0001.  NO  0
+2026/07/09 15:33:49 [INFO] [status]  4   2005  COM7     COM7 Port_#0002. YES  0
+2026/07/09 15:33:49 [INFO] [status]  5   2006  -        COM3 Port_#0003.  NO  0
+2026/07/09 15:33:49 [INFO] [status]  6   2007  -        COM8 Port_#0004.  NO  0

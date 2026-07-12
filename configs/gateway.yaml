@@ -1,0 +1,55 @@
+server:
+  bind_addr: "0.0.0.0"
+  log_level: "info"
+  log_file: "logs/gateway.log"
+  scan_interval_sec: 2
+
+hub_anchor:
+  enabled: false
+  location_contains: ""
+
+slots:
+  - id: 1
+    tcp_port: 2001
+    match_location: "Port_#0001.Hub_#0002"
+    description: "Hub2口1 COM4"
+    baud: 115200
+    data_bits: 8
+    parity: "N"
+    stop_bits: 1
+
+  - id: 2
+    tcp_port: 2002
+    match_location: "Port_#0003.Hub_#0002"
+    description: "Hub2口3 COM6"
+    baud: 115200
+    data_bits: 8
+    parity: "N"
+    stop_bits: 1
+
+  - id: 3
+    tcp_port: 2003
+    match_location: "Port_#0004.Hub_#0002"
+    description: "Hub2口4 COM5"
+    baud: 115200
+    data_bits: 8
+    parity: "N"
+    stop_bits: 1
+
+  - id: 4
+    tcp_port: 2004
+    match_location: "Port_#0002.Hub_#0003"
+    description: "Hub3口2 COM7"
+    baud: 115200
+    data_bits: 8
+    parity: "N"
+    stop_bits: 1
+
+  - id: 5
+    tcp_port: 2005
+    match_location: "Port_#0003.Hub_#0003"
+    description: "Hub3口3 COM3"
+    baud: 115200
+    data_bits: 8
+    parity: "N"
+    stop_bits: 1
